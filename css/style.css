@@ -1,0 +1,23 @@
+.header, .hero, #projects, #contact  {
+    display: flex;
+}
+
+.logo {
+    width: 100px;
+}
+
+.hero__world {
+    width: 40%;
+}
+
+.project__img {
+    width: 25%;
+}
+
+.contact__list {
+    list-style: none;
+}
+
+.contact__icon {
+    width: 50px;
+}
