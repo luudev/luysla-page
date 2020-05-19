@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=Righteous&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Pachi's Page</title>
 </head>
@@ -38,56 +41,63 @@
     </header>
 
     <section class="hero">
+
         <div class="hero__text">
-            <h1>Welcome!</h1>
-            <p>I am <span>Pachi</span> and this is my Webpage.</p>
+            <h1 class="hero__title">Welcome!</h1>
+            <p class="hero__welcome">I am <span class="pachi">Pachi</span> and this is my Webpage.</p>
         </div>
+
         <div class="hero__img">
             <img class="hero__world" src="img/world.png">
         </div>
     </section>
 
-    <section id="about">
-        <h2 class="about__title">About</h2>
-        <p>Hi there!</p>
-        <p>My name is Pachi and I am a Jr. Web Developer.</p>
-        <p>I like cats, books and chocolate</p>
-    </section>
+    <section class="expo">
 
-    <section id="skills">
-        <h2 class="skills__title">Skills</h2>
-        <p class="skills_text">I am a developers focused in web development but curious abour server side</p>
-        <ul class="skills__list">
-            <li class="skills__item">HTML & CSS</li>
-            <li class="skills__item">JavaScript</li>
-            <li class="skills__item">AngularJS</li>
-            <li class="skills__item">NodeJs</li>
-            <li class="skills__item">Python</li>
-            <li class="skills__item">Basics of Design</li>
-        </ul>
+        <div id="about" class="card">
+            <h2 class="expo__title">About</h2>
+            <p>Hi there!</p>
+            <p>My name is Pachi and I am a Web Developer.</p>
+            <p>I am a developer focused in web development but curious about the server side.</p>
+            <p>I like cats, books and chocolate</p>
+        </div>
+
+        <div id="skills" class="card">
+            <h2 class="expo__title">Skills</h2>
+            <ul class="skills__list">
+                <li class="skills__item">HTML & CSS</li>
+                <li class="skills__item">JavaScript</li>
+                <li class="skills__item">AngularJS</li>
+                <li class="skills__item">NodeJs</li>
+                <li class="skills__item">Python</li>
+                <li class="skills__item">Basics of Design</li>
+            </ul>
+        </div>
     </section>
 
     <section id="projects">
         <h2 class="projects__title">Projects:</h2>
-        <div class="project">
-            <h4 class="project__title">Cleaning's Company Page</h4>
-            <img class="project__img" src="img/project-limas.png">
-            <p class="project__text">Static website created with HTML, CSS and Boostrap.</p>
-        </div>
-        <div class="project">
-            <h4 class="project__title">COVID news sms</h4>
-            <img class="project__img" src="img/project-covid.png">
-            <p class="project__text">Webpage for the covid news sms app, made in HTML & CSS</p>
-        </div>
-        <div class="project">
-            <h4 class="project__title">Pig game</h4>
-            <img class="project__img" src="img/project-piggies.png">
-            <p class="project__text">Pig game made with HTML, CSS and Vanilla JavaScript.</p>
+        <div class="projects__container">
+            <div class="project card">
+                <h4 class="project__title">Cleaning's Company Page</h4>
+                <img class="project__img" src="img/project-limas.png">
+                <p class="project__text">Static website created with HTML, CSS and Boostrap.</p>
+            </div>
+            <div class="project card">
+                <h4 class="project__title">COVID news sms</h4>
+                <img class="project__img" src="img/project-covid.png">
+                <p class="project__text">Webpage for the covid news sms app, made in HTML & CSS</p>
+            </div>
+            <div class="project card">
+                <h4 class="project__title">Pig game</h4>
+                <img class="project__img" src="img/project-piggies.png">
+                <p class="project__text">Pig game made with HTML, CSS and Vanilla JavaScript.</p>
+            </div>
         </div>
     </section>
 
     <section id="contact">
-        <h2 class="contact__title">Let's connect!</h2>
+        <h2 class="expo__title">Let's connect!</h2>
         <ul class="contact__list">
             <li class="contact__item">
                 <a class="contact__link" src="https://github.com/pachicodes"></a>
