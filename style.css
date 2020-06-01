@@ -1,13 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 
 body{
-    font-family: 'Itim', cursive;
     --principal:  #f0f0f0;
     --texto: #ffffff;
-    --nav: #303960;
+    /* --nav: #303960; */
+    --nav: #202040;
     --link: #f8b24f;
+    /* --borda: #ff847c;
+     */
+     --borda: #ff6363;
+    --heart: #ff0000;
+    
+    font-family: 'Space Mono', mono space;
     background-color: var(--principal);
+    text-align: center;
 }
 
 div{
@@ -19,15 +25,30 @@ a {
     text-decoration: none;
 }
 
-a:hover{
+.nav__link:hover{
+    border-bottom: 2px solid var(--borda);
+}
+
+h1,h2{
+    font-size: 30px;
+}
+
+.header__title{
+    padding-top: 15px;
+}
+
+.header__texto{
+    font-size: 20px;
+    text-transform: uppercase;
     font-weight: bold;
+    color: var(--borda);
 }
 
 .logo{
-    width: 50px;
+    width: 10%;
 }
 
-.container, .header{
+.container, .header, .expo{
     display: flex;
 }
 
@@ -41,14 +62,99 @@ a:hover{
 }
 
 .nav__item{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
     padding: 20px;
 }
+
 .hero{
-    display: flex;
+    margin-top: 150px;
 }
-.hero__world{
+
+.hero__text{
     width: 50%;
+    margin: auto auto;
+    padding: 40px;
+    border: 2px dotted var(--borda);
 }
-.super-hero{
+
+@keyframes hero__specialpipe {
+    0% { opacity: 1; }
+    50% { opacity: 0.5;}
+    100% { opacity: 0; }
+}
+.hero__specialpipe {
+  -webkit-animation: hero__specialpipe .75s linear infinite;
+  -moz-animation: hero__specialpipe .75s linear infinite;
+  -ms-animation: hero__specialpipe .75s linear infinite;
+  -o-animation: hero__specialpipe .75s linear infinite;
+  animation: hero__specialpipe .75s linear infinite;
+}
+
+.hero_title{
+    animation: hero__title 4s 1s normal;
+}
+
+.super_hero{
     height: 100vh;
+}
+
+.expo{
+    height: 100vh;
+    background-color:var(--texto);
+}
+
+.expo__title{
+    padding: 20px;
+    text-decoration: underline var(--borda);
+}
+
+.card{
+    width: 50%;
+    margin: auto; 
+}
+
+
+.footer{
+    height: 20vh;
+    background-color: var(--nav);
+}
+
+.footer__text{
+    padding-top: 50px;
+    color: var(--texto);
+    font-weight: bold;
+}
+
+#projects{
+    height: 100vh;
+}
+
+.projects__title{
+    padding-top: 230px;
+    padding-bottom: 40px;
+    text-decoration: underline var(--borda);
+}
+
+.contact__title {
+    padding: 40px 20px;
+    text-decoration: underline var(--borda);
+}
+
+.projects__btn a{
+    color: #000;
+}
+
+#contact{
+    height: 50vh;
+    background-color: var(--texto);
+}
+
+.contact__icon{
+    width: 50px;
+}
+
+.projects__icon{
+    width: 100px;
 }
