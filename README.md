@@ -9,7 +9,7 @@
 
 ## Status
 <h4> 
-    Em construção... 🚧
+    Em construção 🚧
 </h4>
 
 ## Recursos utilizados
