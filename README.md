@@ -4,7 +4,7 @@
 
 <p align="center"> 
     Meu portfólio online feito em HTML e CSS 👩‍💻 <br> 
-    🔗 <a href="luysla.github.io/luysla-page/">luysla.github.io/luysla-page/</a> 
+    🔗 <a href="https://luysla.github.io/luysla-page/" target="_blank">luysla.github.io/luysla-page/</a> 
 </p>
 
 ## Status
